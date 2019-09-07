@@ -1,7 +1,7 @@
 //necesitmaos hacer uso de la clase EventEmitter de un modulo
 //nativo de node
 const EventEmitter = require('events');
-//creamos una clase Logger, esto es bien intersante porque con el event-emitter
+//creamos una clase Logger, esto es bien interesante porque con el event-emitter
 //podemos crear un logger propio y así abstraer como ejecutamos nuestro login en nuestro código.
 class Logger extends EventEmitter{
     execute(cb) {
@@ -15,8 +15,8 @@ class Logger extends EventEmitter{
 }
 
 const logger = new Logger();
-//parte importante de los eventos es loger on podemos decir que cada vez que ocurra
-//el evento star haga algo
+//parte importante de los eventos es logger.on podemos decir que cada vez que ocurra
+//el evento start haga algo.
 logger.on('start', () => console.log('Starting'));
 //Acá vemos la ventaja sobre los otros métodos porque yo puedo realmente suscribirme
 //al evento multiples veces sin restricciones, si yo quisiera varias suscribciones debo crear más codigo
