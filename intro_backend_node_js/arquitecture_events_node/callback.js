@@ -4,8 +4,8 @@ const asynCallback = function (cb) {
     //utilizamos un set time out para que esto sea asincrono
     //se agrega la función a ejecutar y el tiempo de ejecución
     setTimeout(() => {
-        //creamos función random donde el 50% va a fallas
-        //en node js es muy comun el concepto ERRO FISRT CALLBACK
+        //creamos función random donde el 50% va a fallar
+        //en nodeJS es muy común el concepto ERROR FIRST CALLBACK
         //cuando hay un error lo primero que voy a enviar es el error
         if (Math.random() < 0.5) {
             return cb(null, 'hello word')
