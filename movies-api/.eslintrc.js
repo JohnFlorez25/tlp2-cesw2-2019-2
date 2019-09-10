@@ -1,14 +1,14 @@
 module.exports = {
-    "env": {
+    "parserOptions": {
+        "ecmaVersion": 2018
+      },
+      "extends": ["eslint:recommended", "prettier"],
+      "env": {
         "es6": true,
         "node": true,
         "mocha": true
-    },
-    "extends": ["eslint:recommended", "prettier"],
-    "parserOptions": {
-        "ecmaVersion": 2018
-    },
-    "rules": {
+      },
+      "rules": {
         "no-console": "warn"
-    }
+      }
 };

@@ -2,14 +2,13 @@ const express = require('express');
 const app = express();
 
 const { config } =require('./config/index');
+const moviesApi = require('./routes/movies');
 
-app.get('/', function(req, res) {
-    res.send("Hello Poli World!!!")
-});
+//midleware para definir como traemos el cuerpo
+app.use(express.json());
 
-app.get('/json', function(req, res) {
-    res.json({hello: 'poli'})
-});
+//es una funcion debemos ejecutarla y le pasamos nuestra funcion de express
+moviesApi(app);
 
 app.listen(config.port, function(){
     console.log(`Escuchando en el puerto http://localhost:${config.port}`);
