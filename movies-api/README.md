@@ -24,7 +24,7 @@ No es recomendable habilitar un endpoint de tipo **PUT** y **DELETE** para toda 
 ## Estructura de una colección de datos con Mockaroo
 
 [Mockaroo](https://mockaroo.com/) es un servicio que nos permite crear datos simulados a partir de una estructura, por ejemplo para generar la estructura de una película:
-```json
+```js
 {
     id: 'd2a4a062-d256-41bb-b1b2-9d915af6b75e',
     title: 'Notti bianche, Le (White Nights)',
