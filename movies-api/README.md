@@ -6,7 +6,7 @@ Con miles de métodos de programa de utilidad HTTP y middleware a su disposició
 
 Express proporciona una delgada capa de características de aplicación web básicas, que no ocultan las características de Node.js que tanto ama y conoce.
 
-> Al estar ubicado en la carpeta en que deseas crear el proyecto se debe crear el **package.json** archivo que es importante para tener todas las dependencias y confifuraciones de su proyecto.
+> Al estar ubicado en la carpeta en que deseas crear el proyecto se debe crear el **package.json** archivo que es importante para tener todas las dependencias y configuraciones de su proyecto.
 
 Desde la consola se crea con el siguiente comando:
 
